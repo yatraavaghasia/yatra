@@ -35,7 +35,7 @@ export default function Footer() {
       </div>
       <div className='address'>
         <h1>ADDRESS</h1>
-        <div>
+        <div className='address-text'>
           <img src="map-pin.png" alt="Map Pin" />
           <a href="https://www.google.com/maps?q=SVNIT+Surat,+Gujarat,+India" target="_blank">
               IC Engine Lab,<br />
