@@ -1,0 +1,188 @@
+.year {
+    /* background-color: rgb(177, 83, 83); */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: solid #0072BB 2px;
+}
+.year-child {
+    /* background-color: bisque; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    /* background-color: crimson; */
+    width: 20vw;
+    margin: 3vw;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+}
+.bottom {
+    /* background-color: chartreuse; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bottom h2, .bottom h3, .bottom a {
+    /* background-color: antiquewhite; */
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+.bottom h2 {
+    color: #0072BB;
+}
+.bottom h3 {
+    font-weight: 500;
+    color: gray;
+}
+.bottom a {
+    font-size: 4vh;
+}
+.top {
+    margin:0;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-img {
+    border-radius: 50%;
+    height: 75%;
+    width: 75%;
+}
+.gradyear {
+    /* background-color: darkblue; */
+    width: 10%;
+}
+.bar {
+    /* background-color: darkorchid; */
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+.bar button {
+    width: 15vw;
+    height: 8vh;
+    outline: none;
+    border:solid #0072BB;
+    background-color: white;
+    margin: 1vw;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.5vw;
+}
+.bar button:hover {
+    background-color: #0072BB;
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+.container {
+    background: #F6F5F7;
+}
+.container>h1 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 4vw;
+    border-bottom: solid #0072BB;
+    padding-bottom: 2vw;
+    font-family: 'Raleway', sans-serif;
+    color: #0072BB;
+}
+.connect>h2 {
+    font-size: 2.5vw;
+}
+.connect button
+{
+    font-size: 2vw;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    color: #0072BB;
+    outline: none;
+    border: none;
+    padding: 1vw;
+    border-radius: 20px;
+    /* transform: scale(1.2); */
+}
+.connect button:hover {
+    background-color: #F6F5F7;
+    transition-duration: 0.1s;
+    border:solid #0072BB;
+}
+.bar, .gradyear {
+    font-family: 'Raleway', sans-serif;
+}
+@media only screen and (max-width: 768px) {
+    .bar {
+        width: 100vw;
+        height: 8vh;
+        /* background-color: #0072BB; */
+    }
+    .bar button {
+        width:20vw;
+        height: 5vh;
+        font-size: 2vh;
+    }
+    .year {
+        /* background-color: #0072BB; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .year-child {
+        /* background-color:#0072BB; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content:stretch;
+        flex-wrap: wrap;
+        /* overflow-wrap: unset; */
+    }
+    .card {
+        /* background-color: #F6F5F7; */
+        margin: 6vh;
+        transform: scale(1.5);
+    }
+    .bottom h2, .bottom h3, .bottom a {
+       font-size: 2vh;
+    }
+    .gradyear {
+        width: 100vw;
+        text-align: center;
+    }
+    .connect {
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2vh;
+        
+    }
+    .connect h2, .connect button {
+        font-size: 5vh;
+    }
+}
